@@ -1,11 +1,16 @@
-# Angular 5 exercise
+# Angular 5 Exercise
 >Simply scaffold your angular 5.0+ library with this yeoman generator and start writing code without having to setup any tedious boilerplate tooling. 
 
 Everything is pre-configured, from a local development server with unit tests, through to publishing your library to npm and a demo to github pages. Hopefully the [angular-cli](https://cli.angular.io/) project will one day make this generator obsolete, however currently the angular-cli is geared towards creating a full web-app rather than just a single re-usable npm library.
 
+Once everything is installed you can start your exam, exam instructions written below. When you are done with the exam please forward me your repository on github for validation.
+
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and `generator-angular-library` using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, fork my repository.
+
+
+Second, install [Yeoman](http://yeoman.io) and `generator-angular-library` using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo generator-angular-library
@@ -41,7 +46,7 @@ Once you've scaffolded out your library, everything is then controlled by npm sc
 
 ## Exam instruction
 
-* Using the data/json on `instruction\data.json`, sample structure below:
+* Using the data/json on `instructions\data.json`, sample structure below:
 ```json
 {
 	"items":
