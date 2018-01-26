@@ -1,4 +1,4 @@
-# generator-angular-library [![Build Status](https://travis-ci.org/mattlewis92/generator-angular-library.svg?branch=master)](https://travis-ci.org/mattlewis92/generator-angular-library)
+# Angular 5 exercise
 >Simply scaffold your angular 5.0+ library with this yeoman generator and start writing code without having to setup any tedious boilerplate tooling. 
 
 Everything is pre-configured, from a local development server with unit tests, through to publishing your library to npm and a demo to github pages. Hopefully the [angular-cli](https://cli.angular.io/) project will one day make this generator obsolete, however currently the angular-cli is geared towards creating a full web-app rather than just a single re-usable npm library.
@@ -38,6 +38,48 @@ Once you've scaffolded out your library, everything is then controlled by npm sc
 * Automatic documentation generated with [compodoc](https://compodoc.github.io/compodoc/)
 * Publish your library to [npm](https://www.npmjs.com/)
 
-## License
 
-MIT © [Matt Lewis](https://mattlewis.me)
+## Exam instruction
+
+* Using the data/json on `instruction\data.json`, sample structure below:
+```json
+{
+	"items":
+		{
+			"item":
+				[
+					{
+						"id": "0001",
+						"type": "donut",
+						"name": "Cake",
+						"ppu": 0.55,
+						"batters":
+							{
+								"batter":
+									[
+										{ "id": "1001", "type": "Regular" },
+										{ "id": "1002", "type": "Chocolate" },
+										{ "id": "1003", "type": "Blueberry" },
+										{ "id": "1004", "type": "Devil's Food" }
+									]
+							},
+						"topping":
+							[
+								{ "id": "5001", "type": "None" },
+								{ "id": "5002", "type": "Glazed" },
+								{ "id": "5005", "type": "Sugar" },
+								{ "id": "5007", "type": "Powdered Sugar" },
+								{ "id": "5006", "type": "Chocolate with Sprinkles" },
+								{ "id": "5003", "type": "Chocolate" },
+								{ "id": "5004", "type": "Maple" }
+							]
+					},
+					...
+				]
+		}
+}
+```
+* Create a sortable table - showing all available data sets possible. `data.json` dataset should render below
+![alt text](https://raw.githubusercontent.com/cenon4dno/generator-angular-library/master/instructions/demo.png)
+* Clicking the column header should sort the table. Example clicking `id` should sort the entire table base on their id.
+* Additional task is to add an input box above the table, that will filder the `name`. (e.g. If I type `Raised` it should only show all the rows with `name` equal to `Raised`)
